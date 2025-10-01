@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9; /* 배경색 */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 버튼 사이 간격 */
+    margin-top: 30px;
+}
+
+.app-button {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* 기본 버튼 색상 (파란색) */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    min-width: 250px; /* 최소 너비 지정 */
+}
+
+.app-button:hover {
+    background-color: #0056b3;
+}
+
+/* 버튼 종류별 색상 지정 (선택 사항) */
+.app-button.other { background-color: #28a745; } /* 녹색 */
+.app-button.tool { background-color: #ffc107; color: #333; } /* 노란색 */
